@@ -109,17 +109,17 @@ class ApiClient {
 
     if (response.success && response.data) {
       // Store token - Supabase session structure
-      const session = response.data.session;
+      const session = response.data as any;
       let token: string | null = null;
       
-      if (session?.access_token) {
-        token = session.access_token;
-      } else if (session?.accessToken) {
-        token = session.accessToken;
-      } else if (response.data.token) {
-        token = response.data.token;
-      } else if (response.data.access_token) {
-        token = response.data.access_token;
+      if (session?.session?.access_token) {
+        token = session.session.access_token;
+      } else if (session?.session?.accessToken) {
+        token = session.session.accessToken;
+      } else if (session?.session?.token) {
+        token = session.session.token;
+      } else if (session?.session?.access_token) {
+        token = session.session.access_token;
       }
       
       if (token) {

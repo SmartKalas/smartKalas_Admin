@@ -10,7 +10,7 @@ import {
   Radio,
 } from 'lucide-react';
 import { useState, useEffect } from 'react';
-import { logoService, type LogoConfig } from '../services/logoService';
+import { logoService } from '../services/logoService';
 import DynamicFavicon from './DynamicFavicon';
 
 const navigation = [

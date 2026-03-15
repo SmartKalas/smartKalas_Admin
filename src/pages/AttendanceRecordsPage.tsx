@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { apiClient } from '../services/api';
-import { ClipboardList, User, BookOpen, Calendar, AlertCircle, Image as ImageIcon } from 'lucide-react';
+import { User, BookOpen, Calendar, AlertCircle, Image as ImageIcon } from 'lucide-react';
 
 interface AttendanceRecord {
   id: string;

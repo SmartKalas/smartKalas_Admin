@@ -16,7 +16,7 @@ export default function LogoManager({ onLogoUpdate }: LogoManagerProps) {
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [urlInput, setUrlInput] = useState('');
   const [success, setSuccess] = useState<string | null>(null);
-  const { user } = useAuthStore();
+  const { } = useAuthStore();
 
   useEffect(() => {
     loadLogoConfig();

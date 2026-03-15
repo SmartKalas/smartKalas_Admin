@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Settings, ToggleLeft, ToggleRight, AlertCircle, CheckCircle } from 'lucide-react';
+import { AlertCircle, CheckCircle } from 'lucide-react';
 import LogoManager from '../components/LogoManager';
 
 interface AppSettings {

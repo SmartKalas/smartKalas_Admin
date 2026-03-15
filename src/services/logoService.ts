@@ -1,5 +1,4 @@
 import { API_BASE_URL } from '../config/api';
-import { useAuthStore } from '../store/authStore';
 
 export interface LogoConfig {
   logoUrl: string;

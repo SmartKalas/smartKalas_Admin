@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { apiClient } from '../services/api';
 import { Users, Mail, Calendar, Activity, AlertCircle } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 interface User {
   id: string;

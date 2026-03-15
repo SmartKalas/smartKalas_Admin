@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { apiClient } from '../services/api';
-import type { CreateAdvertisementInput, UpdateAdvertisementInput } from '../types';
+import type { CreateAdvertisementInput } from '../types';
 import { Loader2, Save, X } from 'lucide-react';
 
 export default function AdvertisementFormPage() {
