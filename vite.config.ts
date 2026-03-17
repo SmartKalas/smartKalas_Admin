@@ -12,8 +12,8 @@ export default defineConfig(({ mode }) => {
       postcss: './postcss.config.js',
     },
     define: {
-      // Make env variables available to the app
-      __APP_ENV__: JSON.stringify(env.VITE_API_URL || 'http://localhost:3000/api'),
+      // Ensure VITE_API_URL is properly available during build
+      'import.meta.env.VITE_API_URL': JSON.stringify(env.VITE_API_URL || 'http://localhost:3000/api'),
     },
   }
 })
